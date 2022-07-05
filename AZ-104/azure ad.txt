@@ -1,0 +1,32 @@
+Step 1: Create Azure Virtual Machine
+Step 2: Add User to VM Access Control(IAM)
+Step 3: Download and modify RDP file.
+Step4: Disable NLA (Choosing Run command option)
+
+Modify RDP File
+enablecredsspsupport:i:0
+
+Determines whether the client will use the Credential Security Support Provider (CredSSP) 
+for authentication if it is available.	- 
+
+0: RDP will not use CredSSP, even if the operating system supports CredSSP
+1: RDP will use CredSSP if the operating system supports CredSSP
+
+
+What is CredSSP used for?
+The Credential Security Support Provider protocol (CredSSP) is a Security Support Provider that is implemented by 
+using the Security Support Provider Interface (SSPI). CredSSP lets
+ an application delegate the user's credentials from the client to the target server for remote
+ authentication
+
+authentication level:i:2
+
+Defines the server authentication level settings.	- 
+
+  0: If server authentication fails, connect to the computer without warning (Connect and don't warn me)
+- 1: If server authentication fails, don't establish a connection (Don't connect)
+- 2: If server authentication fails, show a warning and allow me to connect or refuse the connection (Warn me)
+- 3: No authentication requirement specified.
+
+Microsoft Document
+https://docs.microsoft.com/en-us/azur...

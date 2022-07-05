@@ -1,0 +1,28 @@
+Secretid- 79897ae5-3ab7-43f4-993b-be273095c954
+value - I888Q~vH7M_xMgkZTCEFXW95V~i4G6S2q9FKicYK (client secret)
+tenant id - 259d5f85-f632-42ec-bcc5-b1b2072d0504
+client id - b47ae8ff-b218-41a8-8ef8-057635431ee3	
+
+az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
+az login --service-principal -u b47ae8ff-b218-41a8-8ef8-057635431ee3 -p I888Q~vH7M_xMgkZTCEFXW95V~i4G6S2q9FKicYK --tenant 259d5f85-f632-42ec-bcc5-b1b2072d0504
+
+
+$ export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
+$ export ARM_CLIENT_SECRET="00000000-0000-0000-0000-000000000000"
+$ export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
+$ export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
+
+use setx for windows instead of export
+
+  setx subscription_id   "a5b0380d-1f49-475e-b6a1-788228c2970b"
+  setx client_id       "b47ae8ff-b218-41a8-8ef8-057635431ee3"
+  setx client_secret  "I888Q~vH7M_xMgkZTCEFXW95V~i4G6S2q9FKicYK"
+  setx tenant_id       "259d5f85-f632-42ec-bcc5-b1b2072d0504"
+
+tenant_id  =     "259d5f85-f632-42ec-bcc5-b1b2072d0504"
+client_secret =  "I888Q~vH7M_xMgkZTCEFXW95V~i4G6S2q9FKicYK"
+client_id   =    "b47ae8ff-b218-41a8-8ef8-057635431ee3"
+subscription_id =  "a5b0380d-1f49-475e-b6a1-788228c2970b"
+  
+
+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

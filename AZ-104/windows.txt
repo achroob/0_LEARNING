@@ -1,0 +1,16 @@
+storage_image_reference {
+
+publisher = "MicrosoftWindowsServer"
+
+offer     = "WindowsServer"
+
+sku       = "2016-Datacenter-Server-Core-smalldisk"
+
+version   = "latest"
+}
+
+
+
+powershell -ExecutionPolicy Unrestricted -File configure-music-app.ps1
+
+https://demosa999.blob.core.windows.net/install/install.ps1
